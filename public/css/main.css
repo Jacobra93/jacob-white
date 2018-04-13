@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    /* background: #dadadb; */
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4650ff, #12bbff);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    /* transform: skewY(-15deg); */
+}
+
+.header-container h1 {
+    font-size: 6.4rem;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header-container h2 {
+    font-size: 2rem;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.awesome-icons {
+    font-size: 7rem;
+}
+
+.icon-button {
+    color: #fff;
+}
+
+.icon-button:hover {
+    color: #f3b272;
+    transform:translateY(-1px);
+}
+
+.icon-button:link {
+    /* color: #474747; */
+    text-decoration: none;
+}
+
+/* .awesome-icons:visited { */
+    /* color: #474747; */
+/* } */
+
+.projects-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.projects-header h1 {
+    font-size: 4rem;
+    height: 70px;
+    margin-top: 40px;
+    /* color: #494848; */
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 350px;
+    line-height: 2rem;
+    /* border: .5px solid #d3d3d3; */
+    border: .5px solid #f1f0f0;
+    /* border-radius: 4px; */
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    margin: 40px 0px 0px 0px;
+}
+
+.project h2 {
+    text-align: center;
+    margin: 1rem auto 2rem;
+    font-size: 3.6rem;
+    /* padding: 3rem; */
+}
+
+.project p {
+    margin: 0rem 3rem 2rem;
+    font-size: 1.9rem;
+    /* padding: 0 3rem 1rem; */
+}
+
+.project-image {
+    width: 300px;
+    height: 150px;
+}
+
+.button-container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto 2rem;
+    width: 100%;
+    /* height: 12vh; */
+}
+
+.buttons {
+    background-color: #dddddd;
+    height: 30px;
+    width: 120px;
+    font-size: 3.2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    /* transform: translateY(-1px); */
+}
+
+.buttons:hover {
+    color: #f3f1f1;
+    transform:translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.button:link {
+    color: #474747;
+    text-decoration: none;
+}
+
+.button:visited {
+    color: #474747;
+}
+
+.footer {
+    background: linear-gradient(to right, #4650ff, #12bbff);
+    font-size: 2.4rem;
+    color: #fff;
+    width: 100%;
+    height: 10vh;
+    margin-top: 70px;
+}
+
+@media only screen and (min-width: 501px) {
+
+    .awesome-icons {
+        color: #fff;
+        font-size: 4rem;
+    }
+ 
+    .projects-header h1 {
+        font-size: 4rem;
+        height: 70px;
+        margin-top: 4rem;
+    }
+    
+    .project {
+        height: 200px;
+        width: 600px;
+        line-height: 2rem;
+        /* border-radius: 4px; */
+        margin-top: 4rem;
+    }
+
+    .project h2 {
+        margin: 1.5rem auto 1.5rem;
+        font-size: 2.3rem;
+    }
+
+    /* ffa55e */
+    
+    .project p {
+        margin: 0rem 2rem 2rem;
+        font-size: 1.3rem;
+    }
+
+    .project-image-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .project-info {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .project-image {
+        margin-top: 2rem;
+        width: 240px;
+        height: 120px;
+    }
+    
+}
